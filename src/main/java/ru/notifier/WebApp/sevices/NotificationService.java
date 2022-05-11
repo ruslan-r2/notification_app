@@ -16,10 +16,7 @@ import ru.notifier.WebApp.repositorys.spec.SearchOperation;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.util.List;
-import java.util.Set;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 
 @Service
 public class NotificationService extends Timer {
@@ -28,6 +25,8 @@ public class NotificationService extends Timer {
     private final ClientRepository clientRepository;
     private final MessageRepository messageRepository;
     private final MessageService messageService;
+
+    private Map<Long,Timer> timers = new HashMap<>();
 
     public NotificationService(NotificationRepository notificationRepository,
                                ClientRepository clientRepository,
@@ -44,7 +43,11 @@ public class NotificationService extends Timer {
         return notificationRepository.findAll();
     }
 
-    public void createTimer(Notification notification) {
+    public Map<Long, Timer> getTimers() {
+        return timers;
+    }
+
+    public Timer createTimer(Notification notification) {
 
         Timer timer = new Timer();
 
@@ -83,7 +86,7 @@ public class NotificationService extends Timer {
 
         }
 
-
+        return timer;
     }
 
     public TimerTask createTimerTask(Set<Filter> filters, Notification notification, String timerName) {
@@ -146,7 +149,7 @@ public class NotificationService extends Timer {
 
         for (Notification n : notifications) {
             createTimer(n);
-
+            timers.put(n.getId(), createTimer(n));
         }
 
     }

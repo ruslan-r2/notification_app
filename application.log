@@ -67,3 +67,470 @@
 2022-05-11 19:43:25.278  INFO 169926 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-05-11 19:43:25.284  INFO 169926 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-05-11 19:43:25.315  INFO 169926 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 20:48:18.447  INFO 200553 --- [main] r.n.WebApp.NotifierApplicationTests      : Starting NotifierApplicationTests using Java 11.0.14.1 on Kubuntu with PID 200553 (started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 20:48:18.449  INFO 200553 --- [main] r.n.WebApp.NotifierApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 20:48:19.797  INFO 200553 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 20:48:19.878  INFO 200553 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+2022-05-11 20:48:20.791  INFO 200553 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 20:48:21.157  INFO 200553 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 20:48:21.183  INFO 200553 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 20:48:21.184  INFO 200553 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 20:48:21.236  INFO 200553 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.028s)
+2022-05-11 20:48:21.247  INFO 200553 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2022-05-11 20:48:21.248  INFO 200553 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-05-11 20:48:21.406  INFO 200553 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 20:48:21.474  INFO 200553 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 20:48:21.690  INFO 200553 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 20:48:21.835  INFO 200553 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 20:48:22.854  INFO 200553 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 20:48:22.867  INFO 200553 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 20:48:24.157  INFO 200553 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 20:48:26.744  INFO 200553 --- [main] r.n.WebApp.NotifierApplicationTests      : Started NotifierApplicationTests in 8.976 seconds (JVM running for 10.427)
+2022-05-11 20:48:26.950  INFO 200553 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 20:48:26.957  INFO 200553 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 20:48:26.991  INFO 200553 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 20:49:33.767  INFO 201296 --- [main] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication v0.0.1-SNAPSHOT using Java 11.0.15 on Kubuntu with PID 201296 (/home/ruslan/IdeaProjects/notification_app/target/WebApp-0.0.1-SNAPSHOT.jar started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 20:49:33.771  INFO 201296 --- [main] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 20:49:35.110  INFO 201296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 20:49:35.219  INFO 201296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 6 JPA repository interfaces.
+2022-05-11 20:49:36.465  INFO 201296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 20:49:36.467  INFO 201296 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-05-11 20:49:36.467  INFO 201296 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.6.5].
+2022-05-11 20:49:36.468  INFO 201296 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-05-11 20:49:36.468  INFO 201296 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-05-11 20:49:36.472  INFO 201296 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1f  31 Mar 2020]
+2022-05-11 20:49:36.494  INFO 201296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 20:49:36.496  INFO 201296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 20:49:36.628  INFO 201296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 20:49:36.628  INFO 201296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2781 ms
+2022-05-11 20:49:37.008  INFO 201296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 20:49:37.400  INFO 201296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 20:49:37.432  INFO 201296 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 20:49:37.437  INFO 201296 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 20:49:37.505  INFO 201296 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.033s)
+2022-05-11 20:49:37.532  INFO 201296 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2022-05-11 20:49:37.535  INFO 201296 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-05-11 20:49:37.697  INFO 201296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 20:49:37.799  INFO 201296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 20:49:38.125  INFO 201296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 20:49:38.326  INFO 201296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 20:49:39.449  INFO 201296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 20:49:39.462  INFO 201296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 20:49:40.861  INFO 201296 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 20:49:42.981  INFO 201296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 20:49:43.002  INFO 201296 --- [main] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 10.106 seconds (JVM running for 10.919)
+2022-05-11 20:49:56.441  INFO 201296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 20:49:56.446  INFO 201296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 20:49:56.475  INFO 201296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:13:20.015  INFO 212090 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 212090 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:13:20.016  INFO 212090 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:13:20.158  INFO 212090 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:13:20.158  INFO 212090 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:13:21.149  INFO 212090 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:13:21.231  INFO 212090 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:13:22.331  INFO 212090 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:13:22.347  INFO 212090 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:13:22.347  INFO 212090 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:13:22.443  INFO 212090 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:13:22.444  INFO 212090 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2285 ms
+2022-05-11 21:13:22.803  INFO 212090 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:13:23.137  INFO 212090 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:13:23.167  INFO 212090 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:13:23.168  INFO 212090 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:13:23.225  INFO 212090 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.031s)
+2022-05-11 21:13:23.238  INFO 212090 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2022-05-11 21:13:23.240  INFO 212090 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-05-11 21:13:23.366  INFO 212090 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:13:23.435  INFO 212090 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:13:23.648  INFO 212090 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:13:23.779  INFO 212090 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:13:24.801  INFO 212090 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:13:24.811  INFO 212090 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:13:25.922  INFO 212090 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:13:27.867  INFO 212090 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:13:27.908  INFO 212090 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:13:27.923  INFO 212090 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 8.819 seconds (JVM running for 9.694)
+2022-05-11 21:13:34.255  INFO 212090 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-11 21:13:34.255  INFO 212090 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-11 21:13:34.257  INFO 212090 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-11 21:13:43.534  INFO 212090 --- [http-nio-8080-exec-8] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:13:43.560  INFO 212090 --- [http-nio-8080-exec-8] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:13:46.791  INFO 212090 --- [http-nio-8080-exec-9] ru.notifier.WebApp.aop.LoggingAspect     : before execution(void ru.notifier.WebApp.controllers.NotificationRestController.delete(Notification)), args=[Notification{id=125, start_notification=2022-05-04T18:30, end_notification=2022-05-05T20:20, message='Text', filters=[Filter{id=7, key='tag', value='BRONZ'}, Filter{id=1, key='code_mobile_operator', value='918'}]}]
+2022-05-11 21:13:46.863  INFO 212090 --- [http-nio-8080-exec-9] ru.notifier.WebApp.aop.LoggingAspect     : after execution(void ru.notifier.WebApp.controllers.NotificationRestController.delete(Notification))
+2022-05-11 21:13:46.885  INFO 212090 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:13:46.895  INFO 212090 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:14:30.897  INFO 212090 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.create(Notification)), args=[Notification{id=null, start_notification=2022-05-11T21:16, end_notification=2022-05-11T22:00, message='Test text', filters=[Filter{id=1, key='code_mobile_operator', value='918'}, Filter{id=5, key='tag', value='GOLD'}]}]
+2022-05-11 21:14:30.924  INFO 212090 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.create(Notification))
+2022-05-11 21:14:30.940  INFO 212090 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:14:30.952  INFO 212090 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:16:47.954  INFO 212090 --- [http-nio-8080-exec-9] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification)), args=[Notification{id=2, start_notification=2022-05-06T20:00, end_notification=2022-05-07T22:20, message='Зимняя распродажа, поторопись! Для оленей скидки.', filters=[Filter{id=5, key='tag', value='GOLD'}, Filter{id=2, key='code_mobile_operator', value='928'}]},Notification{id=2, start_notification=2022-05-06T20:00, end_notification=2022-05-07T22:20, message='Зимняя распродажа, поторопись! Для оленей скидки.', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]}]
+2022-05-11 21:16:47.971  INFO 212090 --- [http-nio-8080-exec-9] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification))
+2022-05-11 21:16:47.989  INFO 212090 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:16:47.996  INFO 212090 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:17:38.207  INFO 212090 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification)), args=[Notification{id=1, start_notification=2022-05-06T19:25, end_notification=2022-05-07T23:59, message='Летняя распродажа, поторопись! Для хомяков скидки. Торопись!!!', filters=[Filter{id=4, key='tag', value='VIP'}, Filter{id=1, key='code_mobile_operator', value='918'}]},Notification{id=1, start_notification=2022-05-11T21:20, end_notification=2022-05-11T21:21, message='Летняя распродажа, поторопись! Для хомяков скидки. Торопись!!!', filters=[Filter{id=1, key='code_mobile_operator', value='918'}, Filter{id=4, key='tag', value='VIP'}]}]
+2022-05-11 21:17:38.228  INFO 212090 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification))
+2022-05-11 21:17:38.241  INFO 212090 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:17:38.249  INFO 212090 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:18:18.525  INFO 212090 --- [http-nio-8080-exec-8] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification)), args=[Notification{id=2, start_notification=2022-05-06T20:00, end_notification=2022-05-07T22:20, message='Зимняя распродажа, поторопись! Для оленей скидки.', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]},Notification{id=2, start_notification=2022-05-11T21:22, end_notification=2022-05-11T22:23, message='Зимняя распродажа, поторопись! Для оленей скидки.', filters=[Filter{id=5, key='tag', value='GOLD'}, Filter{id=2, key='code_mobile_operator', value='928'}]}]
+2022-05-11 21:18:18.543  INFO 212090 --- [http-nio-8080-exec-8] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification))
+2022-05-11 21:18:18.555  INFO 212090 --- [http-nio-8080-exec-7] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:18:18.565  INFO 212090 --- [http-nio-8080-exec-7] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:22:21.334  INFO 212090 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.ClientRestController.list()), args=[]
+2022-05-11 21:22:21.368  INFO 212090 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.ClientRestController.list())
+2022-05-11 21:22:34.248  INFO 212090 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Client ru.notifier.WebApp.controllers.ClientRestController.update(Client,Client)), args=[Client{id=103, phone=79280354461, code_mobile_operator=928, tag='GOLD1', time_zone='UTC +02:30'},Client{id=103, phone=79280354461, code_mobile_operator=928, tag='GOLD', time_zone='UTC +02:30'}]
+2022-05-11 21:22:34.260  INFO 212090 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Client ru.notifier.WebApp.controllers.ClientRestController.update(Client,Client))
+2022-05-11 21:22:34.276  INFO 212090 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.ClientRestController.list()), args=[]
+2022-05-11 21:22:34.283  INFO 212090 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.ClientRestController.list())
+2022-05-11 21:23:11.763  INFO 212090 --- [http-nio-8080-exec-7] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:23:11.770  INFO 212090 --- [http-nio-8080-exec-7] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:23:22.945  INFO 212090 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:23:22.949  INFO 212090 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:23:22.975  INFO 212090 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:23:34.849  INFO 217003 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 217003 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:23:34.854  INFO 217003 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:23:34.957  INFO 217003 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:23:34.957  INFO 217003 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:23:36.044  INFO 217003 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:23:36.153  INFO 217003 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:23:37.200  INFO 217003 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:23:37.215  INFO 217003 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:23:37.216  INFO 217003 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:23:37.299  INFO 217003 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:23:37.300  INFO 217003 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2342 ms
+2022-05-11 21:23:37.600  INFO 217003 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:23:37.898  INFO 217003 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:23:37.924  INFO 217003 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:23:37.925  INFO 217003 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:23:37.975  INFO 217003 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.026s)
+2022-05-11 21:23:37.986  INFO 217003 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2022-05-11 21:23:37.987  INFO 217003 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-05-11 21:23:38.193  INFO 217003 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:23:38.266  INFO 217003 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:23:38.492  INFO 217003 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:23:38.611  INFO 217003 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:23:39.641  INFO 217003 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:23:39.654  INFO 217003 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:23:40.796  INFO 217003 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:23:42.997  INFO 217003 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:23:43.051  INFO 217003 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:23:43.068  INFO 217003 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 8.916 seconds (JVM running for 10.177)
+2022-05-11 21:25:31.084  INFO 217003 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-11 21:25:31.085  INFO 217003 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-11 21:25:31.086  INFO 217003 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-11 21:25:31.180  INFO 217003 --- [http-nio-8080-exec-1] ru.notifier.WebApp.aop.LoggingAspect     : before execution(void ru.notifier.WebApp.controllers.NotificationRestController.delete(Notification)), args=[Notification{id=2, start_notification=2022-05-11T21:22, end_notification=2022-05-11T22:23, message='Зимняя распродажа, поторопись! Для оленей скидки.', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]}]
+2022-05-11 21:25:31.220  INFO 217003 --- [http-nio-8080-exec-1] ru.notifier.WebApp.aop.LoggingAspect     : after execution(void ru.notifier.WebApp.controllers.NotificationRestController.delete(Notification))
+2022-05-11 21:25:31.244  INFO 217003 --- [http-nio-8080-exec-2] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:25:31.251  INFO 217003 --- [http-nio-8080-exec-2] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:26:48.807  INFO 217003 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.create(Notification)), args=[Notification{id=null, start_notification=2022-05-11T21:22, end_notification=2022-05-11T22:30, message='928 GOLD', filters=[Filter{id=5, key='tag', value='GOLD'}, Filter{id=2, key='code_mobile_operator', value='928'}]}]
+2022-05-11 21:26:48.818  INFO 217003 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.create(Notification))
+2022-05-11 21:26:48.834  INFO 217003 --- [http-nio-8080-exec-5] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:26:48.844  INFO 217003 --- [http-nio-8080-exec-5] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:27:39.383  INFO 217003 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification)), args=[Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T22:30, message='928 GOLD', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]},Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T21:30, message='928 GOLD', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]}]
+2022-05-11 21:27:39.403  INFO 217003 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification))
+2022-05-11 21:27:39.416  INFO 217003 --- [http-nio-8080-exec-1] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:27:39.426  INFO 217003 --- [http-nio-8080-exec-1] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:28:25.672  INFO 217003 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification)), args=[Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T21:30, message='928 GOLD', filters=[Filter{id=5, key='tag', value='GOLD'}, Filter{id=2, key='code_mobile_operator', value='928'}]},Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T21:30, message='928 GOLD', filters=[Filter{id=5, key='tag', value='GOLD'}, Filter{id=2, key='code_mobile_operator', value='928'}]}]
+2022-05-11 21:28:25.685  INFO 217003 --- [http-nio-8080-exec-4] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification))
+2022-05-11 21:28:25.699  INFO 217003 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:28:25.708  INFO 217003 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:32:54.121  INFO 217003 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification)), args=[Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T21:30, message='928 GOLD', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]},Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T21:30, message='928 GOLD', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]}]
+2022-05-11 21:32:54.130  INFO 217003 --- [http-nio-8080-exec-10] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification))
+2022-05-11 21:32:54.148  INFO 217003 --- [http-nio-8080-exec-1] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:32:54.155  INFO 217003 --- [http-nio-8080-exec-1] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:36:04.338  INFO 217003 --- [http-nio-8080-exec-5] ru.notifier.WebApp.aop.LoggingAspect     : before execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification)), args=[Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T21:30, message='928 GOLD', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]},Notification{id=135, start_notification=2022-05-11T21:22, end_notification=2022-05-11T21:36:30, message='928 GOLD', filters=[Filter{id=2, key='code_mobile_operator', value='928'}, Filter{id=5, key='tag', value='GOLD'}]}]
+2022-05-11 21:36:04.349  INFO 217003 --- [http-nio-8080-exec-5] ru.notifier.WebApp.aop.LoggingAspect     : after execution(Notification ru.notifier.WebApp.controllers.NotificationRestController.update(Notification,Notification))
+2022-05-11 21:36:04.364  INFO 217003 --- [http-nio-8080-exec-7] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:36:04.374  INFO 217003 --- [http-nio-8080-exec-7] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:41:36.886  INFO 217003 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:41:36.890  INFO 217003 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:41:36.920  INFO 217003 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:42:18.329  INFO 225577 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 225577 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:42:18.333  INFO 225577 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:42:18.501  INFO 225577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:42:18.502  INFO 225577 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:42:19.702  INFO 225577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:42:19.801  INFO 225577 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:42:21.065  INFO 225577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:42:21.083  INFO 225577 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:42:21.084  INFO 225577 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:42:21.180  INFO 225577 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:42:21.181  INFO 225577 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2678 ms
+2022-05-11 21:42:21.524  INFO 225577 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:42:21.908  INFO 225577 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:42:21.937  INFO 225577 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:42:21.938  INFO 225577 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:42:21.989  INFO 225577 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.022s)
+2022-05-11 21:42:22.009  INFO 225577 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2022-05-11 21:42:22.064  INFO 225577 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-05-11 21:42:22.086  INFO 225577 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init DB"
+2022-05-11 21:42:22.222  INFO 225577 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - add admin"
+2022-05-11 21:42:22.259  INFO 225577 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add data"
+2022-05-11 21:42:22.298  INFO 225577 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.240s)
+2022-05-11 21:42:22.437  INFO 225577 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:42:22.491  INFO 225577 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:42:22.669  INFO 225577 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:42:22.792  INFO 225577 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:42:24.012  INFO 225577 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:42:24.023  INFO 225577 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:42:25.299  INFO 225577 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:42:27.395  INFO 225577 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:42:27.435  INFO 225577 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:42:27.453  INFO 225577 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 10.091 seconds (JVM running for 10.956)
+2022-05-11 21:46:29.927  INFO 225577 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:46:29.932  INFO 225577 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:46:29.961  INFO 225577 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:46:35.552  INFO 227697 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 227697 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:46:35.555  INFO 227697 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:46:35.678  INFO 227697 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:46:35.679  INFO 227697 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:46:36.750  INFO 227697 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:46:36.841  INFO 227697 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:46:37.910  INFO 227697 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:46:37.925  INFO 227697 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:46:37.925  INFO 227697 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:46:38.008  INFO 227697 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:46:38.009  INFO 227697 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2329 ms
+2022-05-11 21:46:38.336  INFO 227697 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:46:38.629  INFO 227697 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:46:38.654  INFO 227697 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:46:38.655  INFO 227697 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:46:38.722  WARN 227697 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 3
+-> Applied to database : 955613315
+-> Resolved locally    : 1882441029. Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2022-05-11 21:46:38.723  INFO 227697 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:46:38.735  INFO 227697 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:46:38.739  INFO 227697 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-11 21:46:38.759  INFO 227697 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-11 21:46:38.782 ERROR 227697 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 3
+-> Applied to database : 955613315
+-> Resolved locally    : 1882441029. Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
+	at ru.notifier.WebApp.NotifierApplication.main(NotifierApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 3
+-> Applied to database : 955613315
+-> Resolved locally    : 1882441029. Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:131) ~[flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:124) ~[flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:214) ~[flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124) ~[flyway-core-8.0.5.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.6.5.jar:2.6.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 23 common frames omitted
+
+2022-05-11 21:46:56.280  INFO 227921 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 227921 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:46:56.286  INFO 227921 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:46:56.482  INFO 227921 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:46:56.483  INFO 227921 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:46:57.627  INFO 227921 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:46:57.707  INFO 227921 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:46:58.749  INFO 227921 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:46:58.764  INFO 227921 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:46:58.765  INFO 227921 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:46:58.847  INFO 227921 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:46:58.848  INFO 227921 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2365 ms
+2022-05-11 21:46:59.123  INFO 227921 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:46:59.450  INFO 227921 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:46:59.475  INFO 227921 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:46:59.475  INFO 227921 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:46:59.519  INFO 227921 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.019s)
+2022-05-11 21:46:59.536  INFO 227921 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2022-05-11 21:46:59.592  INFO 227921 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-05-11 21:46:59.613  INFO 227921 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init DB"
+2022-05-11 21:46:59.730  INFO 227921 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - add admin"
+2022-05-11 21:46:59.784  INFO 227921 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add data"
+2022-05-11 21:46:59.815  INFO 227921 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.235s)
+2022-05-11 21:46:59.956  INFO 227921 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:47:00.020  INFO 227921 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:47:00.205  INFO 227921 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:47:00.326  INFO 227921 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:47:01.362  INFO 227921 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:47:01.373  INFO 227921 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:47:02.578  INFO 227921 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:47:04.423  INFO 227921 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:47:04.471  INFO 227921 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:47:04.488  INFO 227921 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 9.024 seconds (JVM running for 9.955)
+2022-05-11 21:48:58.121  INFO 227921 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:48:58.125  INFO 227921 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:48:58.151  INFO 227921 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:49:22.658  INFO 229169 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 229169 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:49:22.661  INFO 229169 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:49:22.796  INFO 229169 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:49:22.797  INFO 229169 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:49:24.009  INFO 229169 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:49:24.163  INFO 229169 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:49:25.487  INFO 229169 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:49:25.503  INFO 229169 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:49:25.504  INFO 229169 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:49:25.591  INFO 229169 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:49:25.591  INFO 229169 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2793 ms
+2022-05-11 21:49:25.878  INFO 229169 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:49:26.279  INFO 229169 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:49:26.306  INFO 229169 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:49:26.308  INFO 229169 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:49:26.357  INFO 229169 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.023s)
+2022-05-11 21:49:26.380  INFO 229169 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2022-05-11 21:49:26.457  INFO 229169 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-05-11 21:49:26.502  INFO 229169 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init DB"
+2022-05-11 21:49:26.633  INFO 229169 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - add admin"
+2022-05-11 21:49:26.658  INFO 229169 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add data"
+2022-05-11 21:49:26.673  INFO 229169 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.226s)
+2022-05-11 21:49:26.795  INFO 229169 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:49:26.844  INFO 229169 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:49:27.039  INFO 229169 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:49:27.169  INFO 229169 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:49:28.169  INFO 229169 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:49:28.180  INFO 229169 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:49:29.333  INFO 229169 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:49:31.374  INFO 229169 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:49:31.435  INFO 229169 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:49:31.454  INFO 229169 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 9.58 seconds (JVM running for 10.476)
+2022-05-11 21:49:57.526  INFO 229169 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:49:57.531  INFO 229169 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:49:57.573  INFO 229169 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:50:22.914  INFO 229788 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 229788 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:50:22.920  INFO 229788 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:50:23.070  INFO 229788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:50:23.070  INFO 229788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:50:24.494  INFO 229788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:50:24.583  INFO 229788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:50:25.768  INFO 229788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:50:25.784  INFO 229788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:50:25.784  INFO 229788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:50:25.943  INFO 229788 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:50:25.944  INFO 229788 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2873 ms
+2022-05-11 21:50:26.252  INFO 229788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:50:26.561  INFO 229788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:50:26.589  INFO 229788 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:50:26.590  INFO 229788 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:50:26.640  INFO 229788 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.022s)
+2022-05-11 21:50:26.658  INFO 229788 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2022-05-11 21:50:26.717  INFO 229788 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-05-11 21:50:26.745  INFO 229788 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init DB"
+2022-05-11 21:50:26.867  INFO 229788 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - add admin"
+2022-05-11 21:50:26.906  INFO 229788 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add data"
+2022-05-11 21:50:26.932  INFO 229788 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.223s)
+2022-05-11 21:50:27.101  INFO 229788 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:50:27.177  INFO 229788 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:50:27.378  INFO 229788 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:50:27.523  INFO 229788 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:50:28.566  INFO 229788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:50:28.575  INFO 229788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:50:29.752  INFO 229788 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:50:31.629  INFO 229788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:50:31.722  INFO 229788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:50:31.739  INFO 229788 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 9.626 seconds (JVM running for 10.542)
+2022-05-11 21:52:06.259  INFO 229788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:52:06.264  INFO 229788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:52:06.300  INFO 229788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:52:19.488  INFO 230804 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 230804 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:52:19.490  INFO 230804 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:52:19.662  INFO 230804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:52:19.662  INFO 230804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:52:20.753  INFO 230804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:52:20.836  INFO 230804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:52:21.898  INFO 230804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:52:21.914  INFO 230804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:52:21.914  INFO 230804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:52:22.001  INFO 230804 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:52:22.001  INFO 230804 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2338 ms
+2022-05-11 21:52:22.348  INFO 230804 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:52:22.743  INFO 230804 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:52:22.774  INFO 230804 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:52:22.775  INFO 230804 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:52:22.827  INFO 230804 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.025s)
+2022-05-11 21:52:22.857  INFO 230804 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2022-05-11 21:52:22.928  INFO 230804 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-05-11 21:52:22.956  INFO 230804 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init DB"
+2022-05-11 21:52:23.062  INFO 230804 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - add admin"
+2022-05-11 21:52:23.129  INFO 230804 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add data"
+2022-05-11 21:52:23.152  INFO 230804 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.236s)
+2022-05-11 21:52:23.262  INFO 230804 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:52:23.308  INFO 230804 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:52:23.482  INFO 230804 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:52:23.601  INFO 230804 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:52:24.679  INFO 230804 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:52:24.689  INFO 230804 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:52:25.877  INFO 230804 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:52:27.901  INFO 230804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:52:27.974  INFO 230804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:52:27.996  INFO 230804 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 9.337 seconds (JVM running for 10.281)
+2022-05-11 21:54:56.264  INFO 230804 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:54:56.269  INFO 230804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 21:54:56.300  INFO 230804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-11 21:55:18.502  INFO 232288 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Starting NotifierApplication using Java 11.0.14.1 on Kubuntu with PID 232288 (/home/ruslan/IdeaProjects/notification_app/target/classes started by ruslan in /home/ruslan/IdeaProjects/notification_app)
+2022-05-11 21:55:18.505  INFO 232288 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 21:55:18.598  INFO 232288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 21:55:18.599  INFO 232288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 21:55:19.922  INFO 232288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 21:55:20.001  INFO 232288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+2022-05-11 21:55:21.311  INFO 232288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-11 21:55:21.327  INFO 232288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-11 21:55:21.327  INFO 232288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 21:55:21.415  INFO 232288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-11 21:55:21.415  INFO 232288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2816 ms
+2022-05-11 21:55:21.743  INFO 232288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-11 21:55:22.081  INFO 232288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-11 21:55:22.113  INFO 232288 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-05-11 21:55:22.114  INFO 232288 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost/notifier_db (PostgreSQL 12.10)
+2022-05-11 21:55:22.160  INFO 232288 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.020s)
+2022-05-11 21:55:22.178  INFO 232288 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2022-05-11 21:55:22.238  INFO 232288 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-05-11 21:55:22.264  INFO 232288 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init DB"
+2022-05-11 21:55:22.391  INFO 232288 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - add admin"
+2022-05-11 21:55:22.425  INFO 232288 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - add data"
+2022-05-11 21:55:22.449  INFO 232288 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.218s)
+2022-05-11 21:55:22.568  INFO 232288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 21:55:22.620  INFO 232288 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 21:55:22.807  INFO 232288 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 21:55:22.932  INFO 232288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 21:55:23.966  INFO 232288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 21:55:23.976  INFO 232288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 21:55:25.060  INFO 232288 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-11 21:55:27.130  INFO 232288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-11 21:55:27.206  INFO 232288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-11 21:55:27.230  INFO 232288 --- [restartedMain] ru.notifier.WebApp.NotifierApplication   : Started NotifierApplication in 9.53 seconds (JVM running for 10.603)
+2022-05-11 21:55:29.712  INFO 232288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-11 21:55:29.713  INFO 232288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-11 21:55:29.714  INFO 232288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-11 21:55:30.467  INFO 232288 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.NotificationRestController.list()), args=[]
+2022-05-11 21:55:30.483  INFO 232288 --- [http-nio-8080-exec-3] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.NotificationRestController.list())
+2022-05-11 21:55:32.542  INFO 232288 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.ClientRestController.list()), args=[]
+2022-05-11 21:55:32.561  INFO 232288 --- [http-nio-8080-exec-6] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.ClientRestController.list())
+2022-05-11 21:55:39.235  INFO 232288 --- [http-nio-8080-exec-8] ru.notifier.WebApp.aop.LoggingAspect     : before execution(List ru.notifier.WebApp.controllers.ClientRestController.list()), args=[]
+2022-05-11 21:55:39.242  INFO 232288 --- [http-nio-8080-exec-8] ru.notifier.WebApp.aop.LoggingAspect     : after execution(List ru.notifier.WebApp.controllers.ClientRestController.list())
+2022-05-11 22:01:59.464  INFO 232288 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 22:01:59.468  INFO 232288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-11 22:01:59.505  INFO 232288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

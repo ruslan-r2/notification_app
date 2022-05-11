@@ -21,9 +21,9 @@ create sequence hibernate_sequence start 100 increment 1;
         date_time_of_creation timestamp,
         message_text varchar(255),
         status varchar(255),
-        client_id int8,
-        notification_id int8,
-        primary key (id)
+        client_id int8 not null,
+        notification_id int8 not null,
+        primary key (id, client_id, notification_id)
     );
 
     create table notification (
