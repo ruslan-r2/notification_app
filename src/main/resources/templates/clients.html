@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" th:lang="${lang}">
+<th:block th:include="layouts/header">header</th:block>
+<body>
+    <th:block th:include="layouts/navigation">navbar</th:block>
+
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <table id="clients" class="align-middle table table-sm table-hover caption-top">
+                <caption>Список клиентов</caption>
+                <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Телефон</th>
+                    <th scope="col">Код</th>
+                    <th scope="col">Тэг</th>
+                    <th scope="col">Time zone</th>
+                    <th scope="col" class="text-center"> - </th>
+                    <th scope="col" class="text-center">
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal"
+                                data-target="#ModalAdd" >
+                            Добавить клиента
+                        </button>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- Таблица пользователей. -->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <th:block th:include="layouts/form_client_add(id=@{ModalAdd})" >form_client_add</th:block>
+    <th:block th:include="layouts/form_client_edit(id=@{ModalEdit})" >form_client_edit</th:block>
+    <th:block th:include="layouts/form_client_delete(id=@{ModalDelete})" >form_client_delete</th:block>
+
+    <th:block th:include="layouts/footer">footer</th:block>
+
+    <script src="/js/clients.js"></script>
+
+</body>
+</html>

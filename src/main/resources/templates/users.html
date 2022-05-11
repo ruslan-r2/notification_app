@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" th:lang="${lang}">
+<th:block th:include="layouts/header">header</th:block>
+<body>
+<th:block th:include="layouts/navigation">navbar</th:block>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table id="users" class="align-middle table table-sm table-hover caption-top">
+                <caption>Список пользователей</caption>
+                <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Фамилия</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Роли</th>
+                    <th scope="col"> - </th>
+                    <th scope="col"> - </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <!-- Таблица пользователей. -->
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<th:block th:include="layouts/footer">footer</th:block>
+
+<script>
+    function drowTable() {
+        fetch('http://localhost:8080/rest/api/user')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                //console.log(data);
+                $('#users').append(
+                    `<tbody>${data.map(n =>
+                        `<tr>
+                        <td>${n.id}</td>
+                        <td>${n.username}</td>
+                        <td>${n.password}</td>
+                        <td>${n.surname}</td>
+                        <td>${n.name}</td>
+                        <td>${n.email}</td>
+                        <td>${n.roles.map(r =>
+                            `${r.name}`
+                        )}</td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    </tr>`).join('')}
+                </tbody>`
+                );
+            });
+    };
+
+    $(document).ready(function(){
+        drowTable();
+    });
+</script>
+
+</body>
+</html>

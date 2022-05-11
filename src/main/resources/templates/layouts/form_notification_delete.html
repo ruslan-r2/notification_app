@@ -1,0 +1,23 @@
+<div th:fragment="form_notification_delete" class="modal fade" id="ModalDelete" tabindex="-1" role="dialog"
+     aria-labelledby="ModalLabel" aria-hidden="true" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">Удаление записи рассылки:</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="ModalDeleteForm" class="was-validated" method="POST" action="">
+                    <div class="form-group">
+                        <label for="id" class="col-form-label">ID:</label>
+                        <input type="text" class="form-control" id="id" name="id" value="" readonly required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button id="buttonDelete" type="button" class="btn btn-danger">Удалить!</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div th:fragment="form_client_edit" class="modal fade" id="ModalEdit" tabindex="-1" role="dialog"
+     aria-labelledby="ModalLabel" aria-hidden="true" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">Редактирование записи клиента:</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="ModalEditForm" class="was-validated" method="POST" action="">
+                    <div class="form-group">
+                        <label for="id" class="col-form-label">ID:</label>
+                        <input type="text" class="form-control" id="id" name="id" value="" readonly required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-form-label">Телефон:</label>
+                        <input type="text" class="form-control" id="phone" name="phone" value="" required>
+<!--                        <div class="valid-feedback">Все хорошо!</div>-->
+                        <div class="invalid-feedback">Пожалуйста, введите номер телефона.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="code_mobile_operator" class="col-form-label">Код:</label>
+                        <input type="text" class="form-control" id="code_mobile_operator" name="code_mobile_operator"
+                               value="" required>
+                        <div class="invalid-feedback">Пожалуйста, введите код оператора.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tag" class="col-form-label">Тэг:</label>
+                        <input type="text" class="form-control" id="tag" name="tag" value="" required>
+                        <div class="invalid-feedback">Пожалуйста, введите метку для пользователя.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="time_zone" class="col-form-label">Time zone:</label>
+                        <input type="text" class="form-control" id="time_zone" name="time_zone" value="" required>
+                        <div class="invalid-feedback">Пожалуйста, введите временную зону.</div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button id="buttonEdit" type="button" class="btn btn-danger">Редактировать</button>
+            </div>
+
+        </div>
+    </div>
+</div>
