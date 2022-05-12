@@ -97,13 +97,15 @@ public class NotificationService extends Timer {
                 System.out.println("Начинаем рассылать сообщения! " + timerName);
                 ClientSpecification searchClient = new ClientSpecification();
                 for (Filter filter : filters) {
+                    System.out.println("Filter: " + filter);
                     searchClient.add(new SearchCriteria(filter.getKey(), filter.getValue(), SearchOperation.EQUAL));
                 }
 
                 List<Client> clients = clientRepository.findAll(searchClient);
-                //clients.forEach(System.out::println);
+                clients.forEach(System.out::println);
                 for (Client client : clients) {
-                    Message message = messageRepository.findByClientId(client.getId());
+                    Message message = messageRepository.findByClientAndNotification(client, notification);
+                    System.out.println("Message: " + message);
                     if (message == null) {
                         // create new message datatime text status nitification, client
                         message = new Message(LocalDateTime.now(), notification.getMessage(), "NEW", notification, client);
@@ -121,6 +123,7 @@ public class NotificationService extends Timer {
                         }else{
                             message.setStatus("NOT_DELIVERED");
                             messageRepository.save(message);
+                            System.out.println("Сообщение не было доставлено!!!");
                         }
 
                     } else {
@@ -133,6 +136,8 @@ public class NotificationService extends Timer {
                             if ( httpStatus == HttpStatus.OK) {
                                 message.setStatus("DELIVERED");
                                 messageRepository.save(message);
+                            }else {
+                                System.out.println("Сообщение не было доставлено!!!");
                             }
                         }
                     }
@@ -148,7 +153,6 @@ public class NotificationService extends Timer {
         System.out.println("Рассылок в базе: " + count);
 
         for (Notification n : notifications) {
-            createTimer(n);
             timers.put(n.getId(), createTimer(n));
         }
 
