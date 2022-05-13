@@ -22,12 +22,12 @@ public class LoggingAspect {
         String args = Arrays.stream(jp.getArgs())
                 .map(a -> a.toString())
                 .collect(Collectors.joining(","));
-        logger.info("before " + jp.toString() + ", args=[" + args + "]");
+        logger.info("Перед вызовом метода " + jp.toString() + ", args=[" + args + "]");
     }
 
     @After("callServiceClient()")
     public void afterCallMethodClient(JoinPoint jp) {
-        logger.info("after " + jp.toString());
+        logger.info("После вызова метода " + jp.toString());
     }
 
     @Pointcut("execution(public * ru.notifier.WebApp.controllers.NotificationRestController.*(..))")
@@ -38,11 +38,11 @@ public class LoggingAspect {
         String args = Arrays.stream(jp1.getArgs())
                 .map(a -> a.toString())
                 .collect(Collectors.joining(","));
-        logger.info("before " + jp1.toString() + ", args=[" + args + "]");
+        logger.info("Перед вызовом метода " + jp1.toString() + ", args=[" + args + "]");
     }
 
     @After("callServiceNotification()")
     public void afterCallMethodNotification(JoinPoint jp1) {
-        logger.info("after " + jp1.toString());
+        logger.info("После вызова метода " + jp1.toString());
     }
 }

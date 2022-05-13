@@ -3,6 +3,7 @@ package ru.notifier.WebApp.sevices;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import ru.notifier.WebApp.aop.LoggingAspect;
 import ru.notifier.WebApp.domain.Client;
 import ru.notifier.WebApp.domain.Filter;
 import ru.notifier.WebApp.domain.Message;
@@ -17,6 +18,7 @@ import ru.notifier.WebApp.repositorys.spec.SearchOperation;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.*;
+import java.util.logging.Logger;
 
 @Service
 public class NotificationService extends Timer {
@@ -27,6 +29,7 @@ public class NotificationService extends Timer {
     private final MessageService messageService;
 
     private Map<Long,Timer> timers = new HashMap<>();
+    private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 
     public NotificationService(NotificationRepository notificationRepository,
                                ClientRepository clientRepository,
@@ -59,27 +62,27 @@ public class NotificationService extends Timer {
         Long now = LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
 
         if (start_notification < now && now < end_notification) {
-            System.out.println("Активная рассылка: " + notification);
-            System.out.println("таймер" + timer.toString());
+            logger.info("Активная рассылка: " + notification);
+            logger.info("Таймер: " + timer.toString());
             // start task
             timer.schedule(createTimerTask(notification.getFilters(), notification, timer.toString()), 5 * 1000);
             timer.schedule(new TimerTask() {
                 @Override
                 public void run() {
-                    System.out.println("Останавливаем таймер " + timer.toString());
+                    logger.info("Останавливаем таймер: " + timer.toString());
                     timer.cancel();
                 }
             }, end_notification - now);
 
         } else if (start_notification > now && now < end_notification) {
-            System.out.println("Отложенная рассылка: " + notification);
-            System.out.println("таймер" + timer.toString());
+            logger.info("Отложенная рассылка: " + notification);
+            logger.info("Таймер: " + timer.toString());
             // start task
             timer.schedule(createTimerTask(notification.getFilters(), notification, timer.toString()), start_notification - now); //
             timer.schedule(new TimerTask() {
                 @Override
                 public void run() {
-                    System.out.println("Останавливаем таймер " + timer.toString());
+                    logger.info("Останавливаем таймер: " + timer.toString());
                     timer.cancel();
                 }
             }, end_notification - now);
@@ -94,26 +97,24 @@ public class NotificationService extends Timer {
             @Override
             public void run() {
 
-                System.out.println("Начинаем рассылать сообщения! " + timerName);
+                logger.info("Начинаем рассылать сообщения! " + timerName);
                 ClientSpecification searchClient = new ClientSpecification();
                 for (Filter filter : filters) {
-                    System.out.println("Filter: " + filter);
                     searchClient.add(new SearchCriteria(filter.getKey(), filter.getValue(), SearchOperation.EQUAL));
                 }
 
                 List<Client> clients = clientRepository.findAll(searchClient);
-                clients.forEach(System.out::println);
+                //clients.forEach(System.out::println);
                 for (Client client : clients) {
+                    // Проверяем есть ли сообщение у клиента по данной рассылке.
                     Message message = messageRepository.findByClientAndNotification(client, notification);
-                    System.out.println("Message: " + message);
                     if (message == null) {
                         // create new message datatime text status nitification, client
                         message = new Message(LocalDateTime.now(), notification.getMessage(), "NEW", notification, client);
                         // Сохраняем сообщение в базу. получаем id сообщения
                         message = messageRepository.save(message);
 
-                        System.out.println("Отправляем новое сообщение клиенту " + client.toString());
-                        System.out.println(message.toString());
+                        logger.info("Отправляем новое сообщение клиенту c id " + client.getId() + " | " + message);
 
                         HttpStatus httpStatus = messageService.sendMessage(message);
                         // проверяем статус отправленного сообщения
@@ -123,24 +124,24 @@ public class NotificationService extends Timer {
                         }else{
                             message.setStatus("NOT_DELIVERED");
                             messageRepository.save(message);
-                            System.out.println("Сообщение не было доставлено!!!");
+                            logger.warning("Сообщение не было доставлено!!! " + message );
                         }
 
                     } else {
                         if (message.getStatus().equals("NOT_DELIVERED")) {
                             // отправляем сообщение еще раз
-                            System.out.println("Отправляем повторно сообщение клиенту " + client.toString());
-                            System.out.println(message.toString());
+                            logger.info("Отправляем повторно сообщение клиенту c id " + client.getId() + " | " + message);
                             HttpStatus httpStatus = messageService.sendMessage(message);
                             // проверяем статус отправленного сообщения
                             if ( httpStatus == HttpStatus.OK) {
                                 message.setStatus("DELIVERED");
                                 messageRepository.save(message);
                             }else {
-                                System.out.println("Сообщение не было доставлено!!!");
+                                logger.warning("Сообщение не было доставлено!!! " + message );
                             }
                         }
                     }
+                    logger.info( "Клиент id = " + client.getId() + " | " + message);
                 }
             }
         };
@@ -150,7 +151,7 @@ public class NotificationService extends Timer {
     public void run() {
         List<Notification> notifications = getNotifications();
         int count = notifications.size();
-        System.out.println("Рассылок в базе: " + count);
+        logger.info("Всего в базе рассылок: " + count);
 
         for (Notification n : notifications) {
             timers.put(n.getId(), createTimer(n));

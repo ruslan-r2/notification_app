@@ -17,20 +17,12 @@ public class MessageService {
     @Qualifier("messageRestTemplate")
     private RestTemplate restTemplate;
 
-    // Нужно использовать DTO
     public HttpStatus sendMessage(Message message) {
-
         HttpEntity<Message> requestBody = new HttpEntity<>(message);
-
         ResponseEntity<String> responseAddMessage = restTemplate.exchange("https://probe.fbrq.cloud/v1/send/" +
                 message.getId(), HttpMethod.POST, requestBody, String.class);
-
-//        if (responseAddMessage.getStatusCode() == HttpStatus.OK) {
-//            System.out.println("OK " + responseAddMessage.toString());
-//        } else {
-//            System.out.println("ERROR " + responseAddMessage.toString());
-//        }
         return responseAddMessage.getStatusCode();
+
     }
 
 }
