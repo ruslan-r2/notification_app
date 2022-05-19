@@ -8,12 +8,13 @@
 
 package ru.notifier.WebApp.domain;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table
+@Table(name = "message")
 public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,12 +24,13 @@ public class Message {
     private String status;
 
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn (name="notification_id")
+    @JoinColumn(name = "notification_id")
+    @JsonIgnore
     private Notification notification;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "client_id")
-    @JsonBackReference
+    @JsonIgnore
     private Client client;
 
     public Message() {
@@ -97,8 +99,8 @@ public class Message {
                 ", date_time_of_creation=" + date_time_of_creation +
                 ", message_text='" + message_text + '\'' +
                 ", status='" + status + '\'' +
-                ", notification=" + notification +
-                ", client=" + client +
+                //", notification=" + notification +
+                //", client=" + client +
                 '}';
     }
 }

@@ -2,11 +2,13 @@ package ru.notifier.WebApp.controllers;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
+import ru.notifier.WebApp.domain.Message;
 import ru.notifier.WebApp.domain.Notification;
 import ru.notifier.WebApp.repositorys.NotificationRepository;
 import ru.notifier.WebApp.sevices.NotificationService;
 
 import java.util.List;
+import java.util.Set;
 
 
 @RestController
@@ -16,7 +18,9 @@ public class NotificationRestController {
     private final NotificationRepository notificationRepository;
     private final NotificationService notificationService;
 
-    public NotificationRestController(NotificationRepository notificationRepository, NotificationService notificationService) {
+    public NotificationRestController(NotificationRepository notificationRepository,
+                                      NotificationService notificationService) {
+
         this.notificationRepository = notificationRepository;
         this.notificationService = notificationService;
     }
@@ -24,6 +28,12 @@ public class NotificationRestController {
     @GetMapping
     public List<Notification> list() {
         return notificationRepository.findAll();
+    }
+
+    @GetMapping("/statistics/{id}")
+    public Set<Message> getStatistics(@PathVariable("id") Notification notification) {
+        // TODO сделать подробную статистику по сообщениям определённой рассылке
+        return notification.getMessages();
     }
 
     @GetMapping("{id}")

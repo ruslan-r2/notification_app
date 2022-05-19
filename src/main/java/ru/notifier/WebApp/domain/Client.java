@@ -35,14 +35,13 @@ public class Client {
     private String time_zone;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    @JsonManagedReference
+    @JsonIgnore
     private Set<Message> messages = new HashSet<>();
 
     public Client() {
     }
 
-    public Client(Long id, Long phone, int code_mobile_operator, String tag, String time_zone, Set<Message> messages) {
-        this.id = id;
+    public Client(Long phone, int code_mobile_operator, String tag, String time_zone, Set<Message> messages) {
         this.phone = phone;
         this.code_mobile_operator = code_mobile_operator;
         this.tag = tag;

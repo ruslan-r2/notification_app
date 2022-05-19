@@ -37,12 +37,10 @@ public class Notification {
     @JsonIgnore
     private Set<Message> messages = new HashSet<>();
 
-
     public Notification() {
     }
 
-    public Notification(Long id, LocalDateTime start_notification, LocalDateTime end_notification, String message, Set<Filter> filters, Set<Message> messages) {
-        this.id = id;
+    public Notification(LocalDateTime start_notification, LocalDateTime end_notification, String message, Set<Filter> filters, Set<Message> messages) {
         this.start_notification = start_notification;
         this.end_notification = end_notification;
         this.message = message;
