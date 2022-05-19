@@ -65,7 +65,7 @@ public class NotificationService extends Timer {
             logger.info("Активная рассылка: " + notification);
             logger.info("Таймер: " + timer.toString());
             // start task
-            timer.schedule(createTimerTask(notification.getFilters(), notification, timer.toString()), 5 * 1000);
+            timer.schedule(createTimerTask(notification.getFilters(), notification, timer.toString()), 5 * 1000, 300 * 1000);
             timer.schedule(new TimerTask() {
                 @Override
                 public void run() {
@@ -78,7 +78,7 @@ public class NotificationService extends Timer {
             logger.info("Отложенная рассылка: " + notification);
             logger.info("Таймер: " + timer.toString());
             // start task
-            timer.schedule(createTimerTask(notification.getFilters(), notification, timer.toString()), start_notification - now); //
+            timer.schedule(createTimerTask(notification.getFilters(), notification, timer.toString()), start_notification - now, 300 * 1000); //
             timer.schedule(new TimerTask() {
                 @Override
                 public void run() {
