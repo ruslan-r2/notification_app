@@ -72,36 +72,36 @@ create sequence hibernate_sequence start 100 increment 1;
 
 
     alter table message
-       add constraint FKgvo2vw6xgtws6ognjlnrxyi5x
+       add constraint fk_client_id
        foreign key (client_id)
        references client;
 
 
     alter table message
-       add constraint FKj48auadp2gby47w3v6oc0jbyv
+       add constraint fk_notification_id
        foreign key (notification_id)
        references notification;
 
 
     alter table notification_filters
-       add constraint FKlhwjs0h3kqfo0861q8woy1nyq
+       add constraint fk_filters_id
        foreign key (filters_id)
        references filter;
 
 
     alter table notification_filters
-       add constraint FKp5mn2btcigro62ok9nhrip5do
+       add constraint fk_notification_id
        foreign key (notification_id)
        references notification;
 
 
     alter table user_role
-       add constraint FK66ou45fyydgltrhvuc81rp15q
+       add constraint fk_roles_id
        foreign key (roles_id)
        references roles;
 
 
     alter table user_role
-       add constraint FKfpm8swft53ulq2hl11yplpr5
+       add constraint fk_user_id
        foreign key (user_id)
        references usr;
