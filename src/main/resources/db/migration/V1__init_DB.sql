@@ -67,8 +67,8 @@ create sequence hibernate_sequence start 100 increment 1;
 --       add constraint UK_s6nqeetctduao5dby4yi0xkqq unique (filters_id);
 
 
-    alter table user_role
-       add constraint UK_5k3dviices5fr7560hvc81x4r unique (roles_id);
+--     alter table user_role
+--        add constraint UK_5k3dviices5fr7560hvc81x4r unique (roles_id);
 
 
     alter table message

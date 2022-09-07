@@ -61,6 +61,7 @@
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__init_DB.sql" connection-id="affb47d2-66e3-4479-9c29-c3bf0c1a3bcd" session-id="MAIN" current-schema="information_schema" />
+    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__add_admin.sql" connection-id="affb47d2-66e3-4479-9c29-c3bf0c1a3bcd" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -91,7 +92,7 @@
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
-          <database-version value="12.1" />
+          <database-version value="12.12" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
@@ -101,7 +102,7 @@
           <database value="notifier_db" />
           <type value="USER_PASSWORD" />
           <user value="admin" />
-          <deprecated-pwd value="UXR4NzV1TjM=" />
+          <deprecated-pwd value="" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -210,6 +211,7 @@
         <object-type name="FUNCTION" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
+        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
       </sorting>
       <default-editors>
         <object-type name="VIEW" editor-type="SELECTION" />
@@ -256,11 +258,11 @@
         <nulls-first value="true" />
         <max-sorting-columns value="4" />
       </sorting>
-      <tracking-columns>
-        <columnNames value="" />
+      <audit-columns>
+        <column-names value="" />
         <visible value="true" />
         <editable value="false" />
-      </tracking-columns>
+      </audit-columns>
     </dataset-grid-settings>
     <dataset-editor-settings>
       <text-editor-popup>
